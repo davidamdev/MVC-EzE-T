@@ -49,7 +49,7 @@ Before completing any of the following steps, open a command prompt and navigate
 
 1. #### Create a new project
 
-   - Run `dotnet new -o OnlyBoards.Core` in your previously opened command prompt.
+   - Run `dotnet new mvc -o OnlyBoards.Core` in your previously opened command prompt.
 
 2. #### Install dependencies
 
