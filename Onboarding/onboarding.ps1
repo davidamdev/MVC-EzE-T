@@ -7,6 +7,8 @@ Write-Host 'Installing Visual Studio Code...'
 choco install visualstudiocode -y --force 
 Write-Host 'Installing .NET SDK...'
 choco install dotnet-6.0-sdk -y --force
+Write-Host 'Refreshing Powershell environment...'
+refreshenv
 Write-Host 'Installing Entity Framework CLI...'
 dotnet tool install -g dotnet-ef
 Write-Host 'Installing .NET Code Generator CLI...'
