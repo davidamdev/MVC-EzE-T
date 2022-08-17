@@ -9,7 +9,7 @@ Write-Host 'Installing .NET SDK...'
 choco install dotnet-6.0-sdk -y --force
 Write-Host 'Refreshing Powershell environment...'
 refreshenv
-$env:Path += ";C:\Program Files\dotnet"
+$env:Path += ";C:\Program Files\dotnet;C:\Program Files\Microsoft VS Code\bin"
 Write-Host 'Installing Entity Framework CLI...'
 dotnet tool install -g dotnet-ef
 Write-Host 'Installing .NET Code Generator CLI...'
