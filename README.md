@@ -1,12 +1,21 @@
-# MVC Ez E&T (Example and Tutorial)
+# MVC Ez E&T (Explanation and Tutorial)
 
-This tutorial will walk you through building an MVC CRUD application using .NET 6. It's divided into the following sections:
+This tutorial will walk you through building an MVC CRUD application using .NET 6.
+
+### **Prerequisites**:
+
+This tutorial depends on: vs code, dotnet-ef cli, dotnet-aspnet-codegenerator cli, and .net 6 sdk. The following script automates the onboarding process.
+
+```ps
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/davidamdev/MVC-EzE-T/2022/Onboarding/onboarding.ps1'))
+```
+
+## Table of Contents
 
 1. [Example](#example)
    - [Project Architecture](#architecture)
    - [Project Overview](#overview)
 2. [Tutorial](#tutorial)
-   - [Prerequisites](#prerequisites)
    - [.NET 6 MVC Tutorial](#net-6-mvc)
       1. [Create a new project](#1--create-a-new-project)
       2. [Install dependencies](#2--install-dependencies)
@@ -24,7 +33,7 @@ Model View Controller is a pattern for how the presentation and persistence laye
 
 ### **Overview**:
 
-Today you're going to build an MVC Snowboard Shop. Basically, we’re building a generic IMS (inventory management system), that will create, read, update, and delete snowboards. We'll be creating a code first database with 1 table that will look like this:
+Today you're going to build an MVC Snowboard Shop. Basically, a generic IMS (inventory management system). By the end of this tutorial you will have an app that can create, read, update, and delete snowboards. We'll be creating a code first database with 1 table which will look like this:
 
 | ID | Name | Size | Manufacturer | Price | Quantity |
 |----|------|------|--------------|-------|----------|
@@ -35,17 +44,9 @@ Today you're going to build an MVC Snowboard Shop. Basically, we’re building a
 
 ## Tutorial
 
-### **Prerequisites**:
-
-This tutorial depends on: vs code, dotnet-ef cli, dotnet-aspnet-codegenerator cli, and .net 6 sdk. The following script automates the onboarding process.
-
-```ps
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/davidamdev/MVC-EzE-T/2022/Onboarding/onboarding.ps1'))
-```
-
 ### **.NET 6 MVC**:
 
-Before completing any of the following steps, open a command prompt and navigate to you "source" or "src" folder (wherever you store your projects).
+**Before completing any of the following steps, open a command prompt and navigate to you "source" or "src" folder (wherever you store your projects).**
 
 1. #### Create a new project
 
