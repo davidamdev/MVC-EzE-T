@@ -50,11 +50,11 @@ Today you're going to build an MVC Snowboard Shop. Basically, a generic IMS (inv
 
 1. #### Create a new project
 
-   - Run `dotnet new mvc -o OnlyBoards.Core` in your previously opened command prompt.
+   - Run `dotnet new mvc -o OnlyBoards` in your previously opened command prompt.
 
 2. #### Install dependencies
 
-   - Change directory to OnlyBoards.Core: `cd OnlyBoards.Core`
+   - Change directory to OnlyBoards.Core: `cd OnlyBoards`
 
    - Run the following commands in your previously opened command prompt:
       - `dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design`
